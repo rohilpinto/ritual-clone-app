@@ -26,7 +26,7 @@ button {
 }
 
 .App {
-  height: 100vh;
+  // height: 100vh;
   padding: 0 30px;
 }
 
@@ -64,9 +64,9 @@ p {
         margin: 15px;
         cursor: pointer;
       }
-      &:hover {
-        border-bottom: 5px solid yellow;
-      }
+      // &:hover {
+      //   border-bottom: 5px solid yellow;
+      // }
       // &::before {
       //   content: "";
 
@@ -476,4 +476,433 @@ p {
       font-size: 18px;
     }
   }
+}
+
+// media queries
+@media screen and (max-width: 900px) {
+  .App {
+    padding: 5;
+  }
+  .hero-container {
+    .title {
+      h1 {
+        font-size: 74px;
+        font-weight: 500;
+
+        &:first-of-type {
+          margin-left: 0px;
+        }
+
+        &:nth-child(2) {
+          // border: 1px solid #000;
+          margin-left: 0px;
+        }
+        &:last-of-type {
+          margin-left: 0px;
+          font-style: italic;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .nav {
+    width: auto;
+
+    // border: 1px solid #000;
+    font-weight: 500;
+    padding: 10px;
+    .nav-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .p {
+          margin: 15px;
+          cursor: pointer;
+        }
+        // &:hover {
+        //   border-bottom: 5px solid yellow;
+        // }
+        // &::before {
+        //   content: "";
+
+        //   width: 100px;
+        //   margin: auto;
+        //   height: 20px;
+        //   background: red;
+        //   display: block;
+        //   position: absolute;
+        //   top: 90px;
+        // }
+
+        .cart-logo {
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .end-wrapper {
+        p {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .shop {
+    width: 100%;
+    margin: 64px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    // transition: all 0.3s !important;
+    cursor: pointer;
+    .cat {
+      width: 98px;
+      height: 60px;
+      margin: auto;
+      object-fit: cover;
+      overflow: hidden;
+      transition: all 0.3s !important;
+    }
+    .shop-items {
+      margin: 10px;
+      width: 270px;
+      text-align: center;
+      // height: 100px;
+      position: relative;
+
+      // display: inline-block;
+      overflow: hidden;
+
+      .bookmark {
+        // width: 25px;
+        display: none;
+        position: absolute;
+        bottom: 35px;
+        left: 20px;
+        z-index: 10;
+
+        img {
+          width: 60px;
+          // overflow: hidden;
+        }
+
+        &::after {
+          content: "NEW";
+          display: block;
+          width: 20px;
+          height: 20px;
+          font-size: 12px;
+          position: absolute;
+          bottom: 5px;
+          left: 7px;
+          font-weight: 500;
+        }
+      }
+
+      .bookmark2 {
+        // width: 25px;
+
+        position: absolute;
+        bottom: 35px;
+        left: 20px;
+        z-index: 10;
+        img {
+          // width: 60px;
+          width: 100px;
+        }
+
+        &::after {
+          content: "Save $10";
+
+          display: block;
+          width: auto !important;
+          margin-left: 10px;
+        }
+      }
+
+      p {
+        margin-top: 10px;
+        font-weight: 500;
+      }
+
+      &:hover .cat {
+        transform: scale(1.1);
+        transform-origin: 50% 60%;
+      }
+    }
+  }
+
+  .info {
+    .more-info {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .title {
+      text-align: left;
+      margin: 50px 0 30px 0;
+    }
+
+    .wrapper {
+      margin: 0 20px;
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      .icon-container {
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+      }
+      .icon {
+        text-align: left;
+        // text-align: center;
+      }
+
+      .text {
+        text-align: left;
+      }
+    }
+  }
+
+  .who-we-are {
+    margin-top: 100px;
+    position: relative;
+
+    .bg-circle {
+      position: absolute;
+      width: 770px;
+      height: 770px;
+      background-color: rgb(255, 214, 0);
+      border-radius: 50%;
+      opacity: 1;
+      // z-index: 1;
+      left: -400px;
+      top: -40px;
+      transition: left 2s ease 0s, right 2s ease 0s, opacity 2s ease 0s;
+      z-index: -5;
+    }
+
+    .content-container {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-container {
+        img {
+          width: 100% !important;
+        }
+      }
+
+      .text {
+        margin-left: 0px !important;
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        a {
+          color: $primary-clr;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 20px;
+          border-bottom: 2px solid $primary-clr;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+
+    .content-container-2 {
+      display: flex !important;
+      flex-wrap: wrap-reverse !important;
+      .img-container {
+      }
+
+      .text {
+        margin-right: 0px !important;
+        h1 {
+          font-size: 40px;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 28px;
+        }
+
+        a {
+          color: $primary-clr;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 20px;
+          border-bottom: 2px solid $primary-clr;
+          font-weight: bold;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .featured-product {
+    max-width: 1270px;
+    margin: 100px auto;
+
+    .title-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .title {
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    .link {
+      a {
+        color: $primary-clr;
+        text-decoration: none;
+        border-bottom: 2px solid $primary-clr;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .images-wrapper {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .content {
+        margin: 15px;
+
+        .img-container {
+          position: relative;
+
+          .learn-more {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            height: 50px;
+            bottom: 0px;
+            text-align: center;
+            background: #ffffffe5;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+
+        img {
+          border-radius: 20px;
+        }
+
+        .text {
+          margin-top: 20px;
+        }
+
+        .text :first-child {
+          font-style: italic;
+        }
+
+        .text {
+          h3 {
+            font-size: 22px;
+            font-weight: 500;
+            margin: 15px 0;
+          }
+        }
+
+        .text :last-child {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .clear-and-simple {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
+    .image-container {
+      padding-top: 50px;
+      align-self: flex-start;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .title {
+      margin-top: 120px;
+      margin-bottom: 300px;
+      margin-left: 0px;
+
+      h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      p {
+        line-height: 28px;
+      }
+    }
+
+    .list {
+      display: flex;
+      align-items: center;
+      padding: 2px;
+      margin-top: 20px;
+      margin-left: 0px;
+      img {
+        width: 30px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+
+	.embla {
+		overflow: hidden;
+	}
+	.embla__container {
+		display: flex;
+	}
+	.embla__slide {
+		position: relative;
+		flex: 5 5 100%;
+	}
 }

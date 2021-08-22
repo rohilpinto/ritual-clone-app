@@ -1,7 +1,7 @@
 // import { useState } from "react";
 
 import "./App.scss";
-
+import { useEmblaCarousel } from "embla-carousel/react";
 import cat1 from "./assets/cat-1.jpeg";
 import cat2 from "./assets/cat-2.jpeg";
 import cat3 from "./assets/cat-3.jpeg";
@@ -72,6 +72,8 @@ const imgData = [
 ];
 
 function App() {
+  const [emblaRef] = useEmblaCarousel();
+
   return (
     <div className="App">
       <section className="nav">
@@ -106,30 +108,37 @@ function App() {
       </section>
 
       <div className="max-width">
-        <section className="shop">
-          <div className="shop-items">
-            <img src={cat1} alt="Multivitamin" className="cat-1 cat" />
-            <p>Shop Multivitamin</p>
+        <div className="embla" ref={emblaRef}>
+          <div className="embla__container">
+            <section className="shop ">
+              <div className="shop-items embla__slide">
+                <img src={cat1} alt="Multivitamin" className="cat-1 cat" />
+                <p>Shop Multivitamin</p>
+              </div>
+
+              <div className="shop-items embla__slide ">
+                <div className="bookmark">
+                  <img src={bookmark} alt="bookmark" />
+                </div>
+                <img src={cat2} alt="Protein" className="cat-1 cat" />
+                <p>Shop Protein</p>
+              </div>
+
+              <div className="shop-items embla__slide">
+                <img src={cat3} alt="Pregnency" className="cat-1 cat" />
+                <p>Shop Pregnency</p>
+              </div>
+
+              <div className="shop-items embla__slide">
+                <div className="bookmark bookmark2">
+                  <img src={bookmark2} alt="bookmark" />
+                </div>
+                <img src={cat4} alt="Bundles" className="cat-1 cat" />
+                <p>Shop Bundles</p>
+              </div>
+            </section>
           </div>
-          <div className="shop-items ">
-            <div className="bookmark">
-              <img src={bookmark} alt="bookmark" />
-            </div>
-            <img src={cat2} alt="Protein" className="cat-1 cat" />
-            <p>Shop Protein</p>
-          </div>
-          <div className="shop-items">
-            <img src={cat3} alt="Pregnency" className="cat-1 cat" />
-            <p>Shop Pregnency</p>
-          </div>
-          <div className="shop-items">
-            <div className="bookmark bookmark2">
-              <img src={bookmark2} alt="bookmark" />
-            </div>
-            <img src={cat4} alt="Bundles" className="cat-1 cat" />
-            <p>Shop Bundles</p>
-          </div>
-        </section>
+        </div>
 
         <section className="info">
           <h2 className="title">Daily essentials with good intentions — for living life or creating it.</h2>
