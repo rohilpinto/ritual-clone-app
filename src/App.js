@@ -188,7 +188,7 @@ function App() {
               <p>
                 From Omega-3 DHA from microalgae to regeneratively -<br /> farmed pea protein, our scientists studied diets and genetics <br /> to make daily essentials based on what we need
               </p>
-              <a href="#">Who We Are</a>
+              <a href="https://google.com">Who We Are</a>
             </div>
           </div>
 
@@ -200,8 +200,8 @@ function App() {
                 essentials backed by the first visible supply chain of its <br />
                 kind.
               </p>
-              <a href="#">Meet Our Ingredients</a> <br />
-              <a href="#">Our Clinical Study</a>
+              <a href="https://google.com">Meet Our Ingredients</a> <br />
+              <a href="https://google.com">Our Clinical Study</a>
             </div>
             <div className="img-container">
               <img src={map} alt="map" />
@@ -215,7 +215,7 @@ function App() {
               <h1>Featured Products</h1>
             </div>
             <div className="link">
-              <a href="#">Shop All</a>
+              <a href="https://google.com">Shop All</a>
             </div>
           </div>
 

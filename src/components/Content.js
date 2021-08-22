@@ -9,7 +9,7 @@ const Content = ({ obj }) => {
 
         {img ? (
           <div className="learn-more">
-            <a href="#">Learn More</a>
+            <a href="https://google.com">Learn More</a>
           </div>
         ) : null}
       </div>
