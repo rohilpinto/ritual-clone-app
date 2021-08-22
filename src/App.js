@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 
 import "./App.scss";
 
@@ -85,7 +85,7 @@ function App() {
             <p>Who We Are</p>
 
             <div className="cart-logo">
-              <img src={cart} alt="" />
+              <img src={cart} alt="cart-logo" />
             </div>
           </div>
         </div>
@@ -108,25 +108,25 @@ function App() {
       <div className="max-width">
         <section className="shop">
           <div className="shop-items">
-            <img src={cat1} alt="" className="cat-1 cat" />
+            <img src={cat1} alt="Multivitamin" className="cat-1 cat" />
             <p>Shop Multivitamin</p>
           </div>
           <div className="shop-items ">
             <div className="bookmark">
-              <img src={bookmark} alt="" />
+              <img src={bookmark} alt="bookmark" />
             </div>
-            <img src={cat2} alt="" className="cat-1 cat" />
+            <img src={cat2} alt="Protein" className="cat-1 cat" />
             <p>Shop Protein</p>
           </div>
           <div className="shop-items">
-            <img src={cat3} alt="" className="cat-1 cat" />
+            <img src={cat3} alt="Pregnency" className="cat-1 cat" />
             <p>Shop Pregnency</p>
           </div>
           <div className="shop-items">
             <div className="bookmark bookmark2">
-              <img src={bookmark2} alt="" />
+              <img src={bookmark2} alt="bookmark" />
             </div>
-            <img src={cat4} alt="" className="cat-1 cat" />
+            <img src={cat4} alt="Bundles" className="cat-1 cat" />
             <p>Shop Bundles</p>
           </div>
         </section>
@@ -137,7 +137,7 @@ function App() {
           <div className="more-info">
             <div className="wrapper">
               <div className="icon-container">
-                <img src={circleArrow} alt="" className="icon" />
+                <img src={circleArrow} alt="circleArrow" className="icon" />
               </div>
               <div className="text">
                 Traceable <br />
@@ -146,25 +146,25 @@ function App() {
             </div>
             <div className="wrapper">
               <div className="icon-container">
-                <img src={nogmo} alt="" className="icon" />
+                <img src={nogmo} alt="nogmo" className="icon" />
               </div>
               <div className="text">Non-GMO</div>
             </div>
             <div className="wrapper">
               <div className="icon-container">
-                <img src={gaurd} alt="" className="icon" />
+                <img src={gaurd} alt="gaurd" className="icon" />
               </div>
               <div className="text">Third Party Tested</div>
             </div>
             <div className="wrapper">
               <div className="icon-container">
-                <img src={plant} alt="" className="icon" />
+                <img src={plant} alt="plant" className="icon" />
               </div>
               <div className="text">Vegan</div>
             </div>
             <div className="wrapper">
               <div className="icon-container">
-                <img src={drop} alt="" className="icon" />
+                <img src={drop} alt="drop" className="icon" />
               </div>
               <div className="text">
                 No Artificial <br /> Flavors or <br /> Synthetic Fillers
@@ -178,7 +178,7 @@ function App() {
 
           <div className="content-container">
             <div className="img-container">
-              <img src={whoweare} alt="" />
+              <img src={whoweare} alt="whoweare" />
             </div>
             <div className="text">
               <h1>
@@ -188,7 +188,7 @@ function App() {
               <p>
                 From Omega-3 DHA from microalgae to regeneratively -<br /> farmed pea protein, our scientists studied diets and genetics <br /> to make daily essentials based on what we need
               </p>
-              <a href="">Who We Are</a>
+              <a href="#">Who We Are</a>
             </div>
           </div>
 
@@ -200,11 +200,11 @@ function App() {
                 essentials backed by the first visible supply chain of its <br />
                 kind.
               </p>
-              <a href="">Meet Our Ingredients</a> <br />
-              <a href="">Our Clinical Study</a>
+              <a href="#">Meet Our Ingredients</a> <br />
+              <a href="#">Our Clinical Study</a>
             </div>
             <div className="img-container">
-              <img src={map} alt="" />
+              <img src={map} alt="map" />
             </div>
           </div>
         </section>
@@ -215,7 +215,7 @@ function App() {
               <h1>Featured Products</h1>
             </div>
             <div className="link">
-              <a href="">Shop All</a>
+              <a href="#">Shop All</a>
             </div>
           </div>
 
@@ -228,7 +228,7 @@ function App() {
 
         <section className="clear-and-simple">
           <div className="image-container">
-            <img src={cleansimple} alt="" />
+            <img src={cleansimple} alt="cleansimple" />
           </div>
           <div className="title">
             <h1>Clean and simple, delivered</h1>
@@ -237,19 +237,19 @@ function App() {
             </p>
 
             <div className="list">
-              <img src={freeshipping} alt="" />
+              <img src={freeshipping} alt="freeshipping" />
               <p>Free shipping</p>
             </div>
             <div className="list">
-              <img src={deliverydata} alt="" />
+              <img src={deliverydata} alt="deliverydata" />
               <p>Control your delivery date</p>
             </div>
             <div className="list">
-              <img src={cancel} alt="" />
+              <img src={cancel} alt="cancel" />
               <p>Free and easy cancellation</p>
             </div>
             <div className="list">
-              <img src={thirtyday} alt="" />
+              <img src={thirtyday} alt="thirtyday" />
               <p>30-day money back guarantee</p>
             </div>
           </div>

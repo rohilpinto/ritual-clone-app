@@ -5,11 +5,11 @@ const Content = ({ obj }) => {
   return (
     <div className="content" onMouseEnter={() => setImg(true)} onMouseLeave={() => setImg(false)}>
       <div className="img-container">
-        <img src={img ? obj.onHoverImg : obj.img} alt="" />
+        <img src={img ? obj.onHoverImg : obj.img} alt="container" />
 
         {img ? (
           <div className="learn-more">
-            <a href="">Learn More</a>
+            <a href="#">Learn More</a>
           </div>
         ) : null}
       </div>
