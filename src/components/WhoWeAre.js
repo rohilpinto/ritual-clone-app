@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
-import "../animate.css/animate.min.css";
+import "animate.css/animate.min.css";
 
 import whoweare from "../assets/who-we-are.jpeg";
 import map from "../assets/map.jpeg";
