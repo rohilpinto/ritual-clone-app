@@ -1,6 +1,6 @@
 import React from "react";
-import { useEmblaCarousel } from "embla-carousel/react";
-
+// import { useEmblaCarousel } from "embla-carousel/react";
+// import "../embla.scss";
 import Content from "./Content";
 
 import vitaminfirst from "../assets/vitamins-first.jpeg";
@@ -48,7 +48,6 @@ const imgData = [
 ];
 
 const FeaturedProduct = () => {
-  const [emblaRef2] = useEmblaCarousel();
   return (
     <section className="featured-product">
       <div className="title-wrapper">
@@ -59,14 +58,11 @@ const FeaturedProduct = () => {
           <a href="https://google.com">Shop All</a>
         </div>
       </div>
-      <div className="embla" ref={emblaRef2}>
-        <div className="embla__container">
-          <div className="images-wrapper">
-            {imgData.map((obj) => {
-              return <Content obj={obj} />;
-            })}
-          </div>
-        </div>
+
+      <div className="images-wrapper">
+        {imgData.map((obj) => {
+          return <Content obj={obj} />;
+        })}
       </div>
     </section>
   );
