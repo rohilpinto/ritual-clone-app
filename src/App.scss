@@ -59,10 +59,10 @@ p {
       align-items: center;
       justify-content: center;
       position: relative;
+      cursor: pointer;
 
       .p {
         margin: 15px;
-        cursor: pointer;
       }
       // &:hover {
       //   border-bottom: 5px solid yellow;
@@ -247,6 +247,7 @@ p {
 
   .wrapper {
     margin: 0 20px;
+    z-index: 500;
     .icon-container {
       // display: flex;
       // justify-content: center;
@@ -277,12 +278,11 @@ p {
     height: 770px;
     background-color: rgb(255, 214, 0);
     border-radius: 50%;
-    opacity: 1;
+    // opacity: 1;
     // z-index: 1;
     left: -400px;
     top: -40px;
     transition: left 2s ease 0s, right 2s ease 0s, opacity 2s ease 0s;
-    z-index: -5;
   }
 
   .content-container {
@@ -292,6 +292,7 @@ p {
     justify-content: center;
 
     .img-container {
+      z-index: 100;
     }
 
     .text {
@@ -488,6 +489,7 @@ p {
       h1 {
         font-size: 74px;
         font-weight: 500;
+        font-size: 45px;
 
         &:first-of-type {
           margin-left: 0px;
@@ -682,14 +684,16 @@ p {
 
     .bg-circle {
       position: absolute;
+
       width: 770px;
       height: 770px;
       background-color: rgb(255, 214, 0);
+      transform: scale(0.5);
       border-radius: 50%;
       opacity: 1;
       // z-index: 1;
       left: -400px;
-      top: -40px;
+      top: -400px;
       transition: left 2s ease 0s, right 2s ease 0s, opacity 2s ease 0s;
       z-index: -5;
     }
@@ -736,6 +740,9 @@ p {
       display: flex !important;
       flex-wrap: wrap-reverse !important;
       .img-container {
+        img {
+          margin-top: 20px;
+        }
       }
 
       .text {
@@ -822,6 +829,7 @@ p {
 
         img {
           border-radius: 20px;
+          width: 150px;
         }
 
         .text {
@@ -893,16 +901,4 @@ p {
       }
     }
   }
-
-
-	.embla {
-		overflow: hidden;
-	}
-	.embla__container {
-		display: flex;
-	}
-	.embla__slide {
-		position: relative;
-		flex: 5 5 100%;
-	}
 }

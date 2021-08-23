@@ -2,8 +2,9 @@ import React, { useState } from "react";
 
 const Content = ({ obj }) => {
   const [img, setImg] = useState(false);
+
   return (
-    <div className="content" onMouseEnter={() => setImg(true)} onMouseLeave={() => setImg(false)}>
+    <div className="content embla__slide" onMouseEnter={() => setImg(true)} onMouseLeave={() => setImg(false)}>
       <div className="img-container">
         <img src={img ? obj.onHoverImg : obj.img} alt="container" />
 
@@ -13,7 +14,8 @@ const Content = ({ obj }) => {
           </div>
         ) : null}
       </div>
-      <div className="text">
+
+      <div className="text  ">
         <p>{obj.smallTitle}</p>
         {/* <p>{obj.firstText}</p> */}
         <h3>{obj.title}</h3>
