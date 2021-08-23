@@ -8,7 +8,7 @@ import map from "../assets/map.jpeg";
 const Whoweare = () => {
   return (
     <section className="who-we-are">
-      <ScrollAnimation animateIn="animate__fadeInLeft   " animateOnce={true}>
+      <ScrollAnimation animateIn="animate__fadeInLeft" animateOnce={true}>
         <div className="bg-circle"></div>
       </ScrollAnimation>
 
