@@ -1,6 +1,6 @@
 import React from "react";
-// import { useEmblaCarousel } from "embla-carousel/react";
-// import "../embla.scss";
+
+import { useEmblaCarousel } from "embla-carousel/react";
 import cat1 from "../assets/cat-1.jpeg";
 import cat2 from "../assets/cat-2.jpeg";
 import cat3 from "../assets/cat-3.jpeg";
@@ -9,12 +9,12 @@ import bookmark from "../assets/bookmark.svg";
 import bookmark2 from "../assets/bookmark-2.svg";
 
 const Shop = () => {
-  // const [shopref] = useEmblaCarousel();
+  const [emblaRef] = useEmblaCarousel();
   return (
-    <div className="embla">
+    <div className="embla" ref={emblaRef}>
       <div className="embla__container">
-        <section className="shop ">
-          <div className="shop-items embla__slide">
+        <section className="shop embla__slide">
+          <div className="shop-items ">
             <img src={cat1} alt="Multivitamin" className="cat-1 cat" />
             <p>Shop Multivitamin</p>
           </div>

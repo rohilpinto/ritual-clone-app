@@ -1,6 +1,9 @@
 import React from "react";
 // import { useEmblaCarousel } from "embla-carousel/react";
 // import "../embla.scss";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.scss";
+
 import Content from "./Content";
 
 import vitaminfirst from "../assets/vitamins-first.jpeg";
@@ -60,9 +63,27 @@ const FeaturedProduct = () => {
       </div>
 
       <div className="images-wrapper">
-        {imgData.map((obj) => {
-          return <Content obj={obj} />;
-        })}
+        <Swiper
+          slidesPerView={4}
+          breakpoints={{
+            100: {
+              width: 340,
+              slidesPerView: 2,
+            },
+            800: {
+              width: 1600,
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {imgData.map((obj) => {
+            return (
+              <SwiperSlide>
+                <Content obj={obj} />;
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </section>
   );

@@ -171,7 +171,7 @@ p {
   }
   .shop-items {
     margin: 10px;
-    width: 270px;
+    width: 270px !important;
     text-align: center;
     // height: 100px;
     position: relative;
@@ -188,7 +188,6 @@ p {
       z-index: 10;
 
       img {
-        width: 60px;
         // overflow: hidden;
       }
 
