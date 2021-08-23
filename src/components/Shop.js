@@ -1,5 +1,5 @@
 import React from "react";
-import { useEmblaCarousel } from "embla-carousel/react";
+// import { useEmblaCarousel } from "embla-carousel/react";
 // import "../embla.scss";
 import cat1 from "../assets/cat-1.jpeg";
 import cat2 from "../assets/cat-2.jpeg";
